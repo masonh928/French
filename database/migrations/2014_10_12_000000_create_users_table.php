@@ -21,6 +21,19 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+                       //add class
+                       $table->enum('class', ['0', '1', '2', '3', '4']);
+                       //add role
+                       /*
+           
+                           0 -> teacher/admin
+                           1 -> student
+           
+                       */
+                       $table->enum('role', ['0', '1']);
+                       //Add pic 
+                       $table->string("avatar")->default('default.png');
+                       $table->bigInteger('total_points_earned');
         });
     }
 
