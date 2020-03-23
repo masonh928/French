@@ -7,7 +7,7 @@
     <section class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
     <h1 class="font-weight-800 text-2xl text-gray-800">Dashboard</h1>
     <p class="mr-8 mb-8 font-weight-500 text-gray-700">Hello, Sophi! Here, you can see an overview of all your assignments, overall grade, as well as your messages.</p>
-        
+    <h6 class="text-sm text-black font-weight-800 mb-6">*You are currently enrolled in French III</h6>
     <h3 class="text-xl text-green-800">A</h3>
     <h5 class="text-md text-gray-800">600/650 - 92.307 %</h5>
     </section>

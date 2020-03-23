@@ -25,6 +25,11 @@ Route::get('/dashboard', function(){
     return view('students.dashboard');
 });
 
+Route::get('/viewLesson', function(){
+    return view('students.viewLesson');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
