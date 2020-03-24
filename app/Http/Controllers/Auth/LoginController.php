@@ -26,19 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected function redirectTo()
-    {
-        $User = Auth::user();
-        switch(true)
-        {
-            case $User->isTeacher():
-                return 'Teacher/dashboard';
-            break;
-            case $User->isStudent():
-                return 'Students/dashboard';
-            break;  
-        }
-    }
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
